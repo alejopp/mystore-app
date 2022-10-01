@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Store App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_back">Arrow back</string>
+    <string name="action_search">Action search</string>
+    <string name="categories">Categories</string>
 </resources>
