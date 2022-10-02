@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mystoreapp.data.models.Product
 import com.example.mystoreapp.databinding.ItemProductBinding
+import com.squareup.picasso.Picasso
 
 
 class ProductAdapter(private val productList: MutableList<Product>) :
@@ -20,6 +21,8 @@ class ProductAdapter(private val productList: MutableList<Product>) :
         val product = productList[position]
         productViewholder.binding.tvProductTitle.text = product.title
         productViewholder.binding.tvProductDescriptionValue.text = product.description
+        productViewholder.binding.tvProductRate.text = product.rating.toString()
+        Picasso.get().load(product.thumbnail).into(productViewholder.binding.ivProductThumbnail)
     }
 
     override fun getItemCount() = productList.size

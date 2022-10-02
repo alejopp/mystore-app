@@ -60,6 +60,9 @@ dependencies {
     //Dagger Hilt
     implementation "com.google.dagger:hilt-android:$daggerHiltVersion"
     kapt "com.google.dagger:hilt-compiler:$daggerHiltVersion"
+
+    //Picasso
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
 }
 
 kapt {

@@ -35,6 +35,7 @@ ext {
     lifecycleVersion = "2.5.1"
     daggerHiltVersion = "2.44"
     navVersion = "2.5.2"
+    picassoVersion = "2.71828"
 }
 
 task clean(type: Delete) {

@@ -6,9 +6,11 @@
     <string name="action_search">Action search</string>
     <string name="categories">Categories</string>
     <string name="products">Products</string>
-    <string name="description">Description</string>
+    <string name="description">Description:</string>
     <string name="product_detail">Product Detail</string>
     <string name="network_error">Network error</string>
     <string name="unknown_host_exception">Server error</string>
     <string name="error_message">An error has occured</string>
+    <string name="rating_icon">Rating icon</string>
+    <string name="product_thumbnail">Product thumbnail</string>
 </resources>
