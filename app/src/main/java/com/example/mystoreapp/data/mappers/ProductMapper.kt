@@ -4,6 +4,7 @@ import com.example.mystoreapp.data.models.Product
 import com.example.mystoreapp.data.models.dto.ProductDto
 
 fun ProductDto.toModel() = Product(
+    id,
     title,
     description,
     price,
