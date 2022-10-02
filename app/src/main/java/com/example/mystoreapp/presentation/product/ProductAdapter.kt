@@ -7,7 +7,7 @@ import com.example.mystoreapp.data.models.Product
 import com.example.mystoreapp.databinding.ItemProductBinding
 
 
-class ProductAdapter(private val productList: List<Product>) :
+class ProductAdapter(private val productList: MutableList<Product>) :
     RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {

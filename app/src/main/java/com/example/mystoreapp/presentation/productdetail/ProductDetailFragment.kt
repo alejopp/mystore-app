@@ -10,7 +10,9 @@ import com.example.mystoreapp.R
 import com.example.mystoreapp.databinding.FragmentProductBinding
 import com.example.mystoreapp.databinding.FragmentProductDetailBinding
 import com.example.mystoreapp.presentation.product.ProductViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ProductDetailFragment : Fragment() {
 
     private var _binding: FragmentProductDetailBinding? = null
@@ -20,7 +22,7 @@ class ProductDetailFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentProductDetailBinding.inflate(inflater, container, false)
         return binding.root
     }

@@ -5,6 +5,6 @@ import com.example.mystoreapp.utils.ResponseStatus
 
 interface ProductRepository {
 
-    suspend fun getProductList(): ResponseStatus<List<Product>>
+    suspend fun getProductList(): ResponseStatus<MutableList<Product>>
 
 }

@@ -9,7 +9,9 @@ import androidx.fragment.app.viewModels
 import com.example.mystoreapp.R
 import com.example.mystoreapp.databinding.ActivityMainBinding
 import com.example.mystoreapp.databinding.FragmentHomeBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
@@ -21,7 +23,6 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        homeViewModel.getProductList()
         return binding.root
     }
 
