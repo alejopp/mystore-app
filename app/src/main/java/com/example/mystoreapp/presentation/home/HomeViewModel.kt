@@ -9,7 +9,7 @@ class HomeViewModel: ViewModel() {
 
     fun getProductList(){
         viewModelScope.launch {
-            val productList = RetrofitProvider.retrofit.getProducts()
+            val response = RetrofitProvider.retrofit.getProducts()
             val a = productList
         }
     }
