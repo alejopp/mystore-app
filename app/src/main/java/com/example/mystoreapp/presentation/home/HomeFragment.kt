@@ -21,6 +21,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        homeViewModel.getProductList()
         return binding.root
     }
 
