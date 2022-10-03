@@ -18,6 +18,9 @@ class ProductViewModel @Inject constructor(private val productRepository: Produc
         private val _productList = MutableLiveData<MutableList<Product>?>()
         val productList: LiveData<MutableList<Product>?> get() = _productList
 
+        private val _product = MutableLiveData<Product?>()
+        val product: LiveData<Product?> get() = _product
+
         private val _status = MutableLiveData<ResponseStatus<Any>>()
         val status: LiveData<ResponseStatus<Any>> get() = _status
 
@@ -53,4 +56,20 @@ class ProductViewModel @Inject constructor(private val productRepository: Produc
             }
         }
     }
+
+    fun getProductById(id: Int){
+        viewModelScope.launch {
+            _status.value = ResponseStatus.Loading()
+            val response = productRepository.getProductById(id)
+            if (response is ResponseStatus.Success){
+                _product.value = response.data
+                _status.value = ResponseStatus.Success(response.data)
+            }
+            if (response is ResponseStatus.Error){
+                _status.value = ResponseStatus.Error(response.messageId)
+            }
+        }
+    }
+
+
 }

@@ -6,13 +6,15 @@
         <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.143" />
         <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.143" />
         <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/drawable/ic_baseline_star_48.xml" value="0.179" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout-v26/item_product.xml" value="0.25" />
         <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/fragment_product.xml" value="0.25" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/fragment_product.xml" value="0.1" />
         <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/fragment_product_detail.xml" value="0.25" />
         <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/item_categorie.xml" value="0.25" />
         <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/item_category.xml" value="0.25" />
         <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/item_product.xml" value="0.264" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/item_product_image.xml" value="0.25" />
         <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/menu/top_bar_search.xml" value="0.25" />
       </map>
     </option>

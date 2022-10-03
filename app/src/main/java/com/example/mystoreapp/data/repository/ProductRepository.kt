@@ -12,5 +12,6 @@ interface ProductRepository {
     //Database
     suspend fun insertProductsIntoDatabase(products: MutableList<Product>): ResponseStatus<Unit>
     suspend fun getProductsFromDatabase(): ResponseStatus<MutableList<Product>>
+    suspend fun getProductById(id: Int): ResponseStatus<Product>
 
 }

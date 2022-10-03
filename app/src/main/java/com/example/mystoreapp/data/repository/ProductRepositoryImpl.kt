@@ -4,6 +4,7 @@ import com.example.mystoreapp.data.api.ApiService
 import com.example.mystoreapp.data.api.makeNetworkCall
 import com.example.mystoreapp.data.db.dao.ProductDao
 import com.example.mystoreapp.data.db.entities.ProductEntity
+import com.example.mystoreapp.data.db.makeDatabaseCall
 import com.example.mystoreapp.data.mappers.toEntity
 import com.example.mystoreapp.data.mappers.toModel
 import com.example.mystoreapp.data.models.Product
@@ -15,6 +16,7 @@ class ProductRepositoryImpl @Inject constructor(
     private val productDao: ProductDao
 ) : ProductRepository {
 
+    //From Api
     override suspend fun getProductsFromApi(): ResponseStatus<MutableList<Product>> = makeNetworkCall {
         val response = api.getProducts()
         response.products.map { productDto ->
@@ -22,6 +24,7 @@ class ProductRepositoryImpl @Inject constructor(
         }.toMutableList()
     }
 
+    //From Database
     override suspend fun insertProductsIntoDatabase(products: MutableList<Product>) = makeNetworkCall {
         productDao.insertProducts(products.map { product -> product.toEntity() })
     }
@@ -30,6 +33,10 @@ class ProductRepositoryImpl @Inject constructor(
         productDao.getProducts().map { postEntity ->
             postEntity.toModel()
         }.toMutableList()
+    }
+
+    override suspend fun getProductById(id: Int): ResponseStatus<Product> = makeDatabaseCall {
+        productDao.getProductById(id)
     }
 
 }

@@ -14,5 +14,17 @@
         android:id="@+id/productFragment"
         android:name="com.example.mystoreapp.presentation.product.ProductFragment"
         android:label="fragment_product"
-        tools:layout="@layout/fragment_product" />
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_ProductDetailFragment"
+            app:destination="@id/ProductDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ProductDetailFragment"
+        android:name="com.example.mystoreapp.presentation.productdetail.ProductDetailFragment"
+        android:label="ProductDetailFragment" >
+        <argument
+            android:name="product_id"
+            app:argType="integer" />
+    </fragment>
 </navigation>

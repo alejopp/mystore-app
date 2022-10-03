@@ -5,6 +5,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.mystoreapp.data.db.entities.ProductEntity
+import com.example.mystoreapp.data.models.Product
 
 @Dao
 interface ProductDao {
@@ -14,5 +15,8 @@ interface ProductDao {
 
     @Query("SELECT * FROM product_table")
     suspend fun getProducts(): List<ProductEntity>
+
+    @Query("SELECT * FROM product_table WHERE id = :id")
+    suspend fun getProductById(id: Int): Product
 
 }

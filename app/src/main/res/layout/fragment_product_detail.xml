@@ -28,7 +28,9 @@
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tb_product_detail_top_bar" />
+        app:layout_constraintTop_toBottomOf="@+id/tb_product_detail_top_bar"
+        app:layout_constraintBottom_toTopOf="@id/hgl_product_detail_40"
+        tools:listitem="@layout/item_product_image"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/hgl_product_detail_40"
@@ -43,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:text="@string/product_name_format"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hgl_product_detail_40" />
 
@@ -52,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/product_price_format"
         app:layout_constraintStart_toStartOf="@+id/tv_product_detail_title"
         app:layout_constraintTop_toBottomOf="@+id/tv_product_detail_title" />
 
@@ -61,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/product_discount_format"
         app:layout_constraintStart_toStartOf="@+id/tv_product_detail_price"
         app:layout_constraintTop_toBottomOf="@+id/tv_product_detail_price" />
 
@@ -70,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/product_stock_format"
         app:layout_constraintStart_toStartOf="@+id/tv_product_detail_discount"
         app:layout_constraintTop_toBottomOf="@+id/tv_product_detail_discount" />
 
@@ -79,16 +81,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/product_brand_format"
         app:layout_constraintStart_toStartOf="@+id/tv_product_detail_stock"
         app:layout_constraintTop_toBottomOf="@+id/tv_product_detail_stock" />
 
     <TextView
-        android:id="@+id/tv_product_detail_cetegory"
+        android:id="@+id/tv_product_detail_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/product_category_format"
         app:layout_constraintStart_toStartOf="@+id/tv_product_detail_brand"
         app:layout_constraintTop_toBottomOf="@+id/tv_product_detail_brand" />
 
@@ -97,9 +99,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/tv_product_detail_cetegory"
-        app:layout_constraintTop_toBottomOf="@+id/tv_product_detail_cetegory" />
+        android:text="@string/product_description_format"
+        app:layout_constraintStart_toStartOf="@+id/tv_product_detail_category"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_detail_category" />
 
     <ImageView
         android:id="@+id/iv_product_detail_rate"
@@ -114,7 +116,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:text="TextView"
+        tools:text="5.0"
         app:layout_constraintEnd_toEndOf="@+id/iv_product_detail_rate"
         app:layout_constraintStart_toStartOf="@+id/iv_product_detail_rate"
         app:layout_constraintTop_toBottomOf="@+id/iv_product_detail_rate" />
