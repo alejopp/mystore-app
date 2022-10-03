@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Store App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_back">Arrow back</string>
+    <string name="action_search">Action search</string>
+    <string name="categories">Categories</string>
+    <string name="products">Products</string>
+    <string name="description">Description:</string>
+    <string name="product_detail">Product Detail</string>
+    <string name="network_error">Network error</string>
+    <string name="unknown_host_exception">Server error</string>
+    <string name="error_message">An error has occurred</string>
+    <string name="rating_icon">Rating icon</string>
+    <string name="product_thumbnail">Product thumbnail</string>
+    <string name="unknown_sql_exception">Sql error</string>
+    <string name="database_error">Database error</string>
+    <string name="product_name_format">Name: %s</string>
+    <string name="product_price_format">Price: %d</string>
+    <string name="product_discount_format">Discount: %.1f</string>
+    <string name="product_stock_format">Stock: %d</string>
+    <string name="product_brand_format">Brand: %s</string>
+    <string name="product_category_format">Category: %s</string>
+    <string name="product_description_format">Description: %s</string>
+    <string name="product_image">Product image</string>
+    <string name="filter_products">FIlter products</string>
+    <string name="filter_by">Filter by</string>
+    <string name="price">Price:</string>
+</resources>

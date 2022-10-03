@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.143" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/drawable/ic_baseline_filter_alt_24.xml" value="0.1595" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.143" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/drawable/ic_baseline_star_48.xml" value="0.179" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout-v26/item_product.xml" value="0.25" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/fragment_product.xml" value="0.2" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/fragment_product_detail.xml" value="0.25" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/item_categorie.xml" value="0.25" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/item_category.xml" value="0.25" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/item_product.xml" value="0.4" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/layout/item_product_image.xml" value="0.25" />
+        <entry key="..\:/Users/Alejandro/Documents/AndroidStudioProjects/mystore-app/app/src/main/res/menu/top_bar_search.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
