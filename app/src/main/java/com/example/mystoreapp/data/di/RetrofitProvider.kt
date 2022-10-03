@@ -1,6 +1,7 @@
 package com.example.mystoreapp.data.di
 
 import com.example.mystoreapp.data.api.ApiService
+import com.example.mystoreapp.data.db.dao.ProductDao
 import com.example.mystoreapp.data.repository.ProductRepository
 import com.example.mystoreapp.data.repository.ProductRepositoryImpl
 import com.example.mystoreapp.utils.PRODUCTS_BASE_URL
@@ -42,10 +43,10 @@ object RetrofitProvider {
             .create(ApiService::class.java)
     }
 
-    @Provides
+    @Provides //TODO("Repository provider class")
     @Singleton
-    fun provideProductRepository(apiService: ApiService): ProductRepository {
-        return ProductRepositoryImpl(apiService)
+    fun provideProductRepository(apiService: ApiService, productDao: ProductDao): ProductRepository {
+        return ProductRepositoryImpl(apiService, productDao)
     }
 
 }

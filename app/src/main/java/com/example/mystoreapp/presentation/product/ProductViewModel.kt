@@ -21,17 +21,36 @@ class ProductViewModel @Inject constructor(private val productRepository: Produc
         private val _status = MutableLiveData<ResponseStatus<Any>>()
         val status: LiveData<ResponseStatus<Any>> get() = _status
 
-        fun getProductList(){
+        fun getProductsFromDatabase(){
             viewModelScope.launch {
-                _status.value = ResponseStatus.Loading()
-                val response = productRepository.getProductList()
+                val response = productRepository.getProductsFromDatabase()
                 if (response is ResponseStatus.Success){
-                    _productList.value = response.data
-                    _status.value = ResponseStatus.Success(response.data)
+                    if (response.data.size == 0){
+                        getProductsFromApi()
+                    }
+                    else{
+                        _productList.value = response.data
+                        _status.value = ResponseStatus.Success(response.data)
+                    }
                 }
                 if (response is ResponseStatus.Error){
                     _status.value = ResponseStatus.Error(response.messageId)
                 }
             }
         }
+
+    private fun getProductsFromApi() {
+        _status.value = ResponseStatus.Loading()
+        viewModelScope.launch {
+            val response = productRepository.getProductsFromApi()
+            if(response is ResponseStatus.Success){
+                productRepository.insertProductsIntoDatabase(response.data)
+                _productList.value = response.data
+                _status.value = ResponseStatus.Success(response.data)
+            }
+            if (response is ResponseStatus.Error){
+                _status.value = ResponseStatus.Success(response.messageId)
+            }
+        }
+    }
 }

@@ -13,4 +13,6 @@
     <string name="error_message">An error has occured</string>
     <string name="rating_icon">Rating icon</string>
     <string name="product_thumbnail">Product thumbnail</string>
+    <string name="unknown_sql_exception">Sql error</string>
+    <string name="database_error">Database error</string>
 </resources>

@@ -8,13 +8,9 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.mystoreapp.R
-import com.example.mystoreapp.databinding.FragmentHomeBinding
 import com.example.mystoreapp.databinding.FragmentProductBinding
-import com.example.mystoreapp.presentation.home.HomeViewModel
 import com.example.mystoreapp.utils.ResponseStatus
-import dagger.Lazy
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -65,7 +61,7 @@ class ProductFragment : Fragment() {
 
     private fun setComponents() {
         //Get products
-        productViewModel.getProductList()
+        productViewModel.getProductsFromDatabase()
         //Set Product recycler view
         binding.rvProduct.layoutManager = GridLayoutManager(context, GRID_COLUMNS)
     }
