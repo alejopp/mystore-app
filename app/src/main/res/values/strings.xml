@@ -23,4 +23,7 @@
     <string name="product_category_format">Category: %s</string>
     <string name="product_description_format">Description: %s</string>
     <string name="product_image">Product image</string>
+    <string name="filter_products">FIlter products</string>
+    <string name="filter_by">Filter by</string>
+    <string name="price">Price:</string>
 </resources>

@@ -24,6 +24,7 @@ class ProductAdapter(private val productList: MutableList<Product>) :
         productViewholder.binding.tvProductTitle.text = product.title
         productViewholder.binding.tvProductDescriptionValue.text = product.description
         productViewholder.binding.tvProductRate.text = product.rating.toString()
+        productViewholder.binding.tvProductPriceValue.text = product.price.toString()
         Picasso.get().load(product.thumbnail).into(productViewholder.binding.ivProductThumbnail)
     }
 

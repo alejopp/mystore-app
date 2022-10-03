@@ -28,13 +28,22 @@
             tools:text="@tools:sample/cities" />
 
         <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/price"
+            cardView:layout_constraintStart_toStartOf="@+id/tv_product_title"
+            cardView:layout_constraintTop_toBottomOf="@+id/tv_product_title" />
+
+        <TextView
             android:id="@+id/tv_product_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/description"
             cardView:layout_constraintStart_toStartOf="@+id/tv_product_title"
-            cardView:layout_constraintTop_toBottomOf="@+id/tv_product_title" />
+            cardView:layout_constraintTop_toBottomOf="@+id/tv_product_price" />
 
         <TextView
             android:id="@+id/tv_product_description_value"
@@ -93,6 +102,18 @@
             cardView:layout_constraintEnd_toEndOf="parent"
             cardView:layout_constraintTop_toTopOf="@+id/iv_product_rating"
             tools:text="@tools:sample/us_zipcodes" />
+
+        <TextView
+            android:id="@+id/tv_product_price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            tools:text="price_value"
+            cardView:layout_constraintBottom_toBottomOf="@+id/tv_product_price"
+            cardView:layout_constraintEnd_toEndOf="parent"
+            cardView:layout_constraintHorizontal_bias="0.0"
+            cardView:layout_constraintStart_toEndOf="@+id/tv_product_price"
+            cardView:layout_constraintTop_toTopOf="@+id/tv_product_price" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
